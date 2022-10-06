@@ -58,6 +58,10 @@ echo "[rocketchat-dev] Downloaded files."
 #####
 echo "[${TOOL_NAME}] Registering the alias..."
 #
+echo "" >> ~/.bashrc
+echo "# ${TOOL_NAME}" >> ~/.bashrc
+echo "# @see https://github.com/ApitechFR/rocketchat-dev" >> ~/.bashrc
+echo "#" >> ~/.bashrc
 echo "alias ${TOOL_CMD}=${INSTALL_FOLDER}/rocket-compose.sh" >> ~/.bashrc
 #
 echo "[${TOOL_NAME}] Registered alias. Use 'source ~/.bashrc' to get it."
